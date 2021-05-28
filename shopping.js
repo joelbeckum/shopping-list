@@ -69,4 +69,8 @@ addGroceryItem(shoppingList, parmesanCheese)
 addGroceryItem(shoppingList, greekYogurt)
 addGroceryItem(shoppingList, groundBeef)
 
-console.log(shoppingList)
+for (let item of shoppingList) {
+    if (item.price > 8) {
+        console.log(item);
+    }
+}
